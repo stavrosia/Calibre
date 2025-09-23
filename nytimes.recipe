@@ -24,26 +24,26 @@ persistedQuery = '1f99120a11e94dd62a9474f68ee1255537ee3cf7eac20a0377819edb2fa1fe
 # the section you are not interested in
 web_sections = [
     'world',
-    #'us',
-    #'politics',
-    #'nyregion',
-    #'business',
-    #'technology',
-    #'sports',
+    'us',
+    'politics',
+    'nyregion',
+    'business',
+    'technology',
+    'sports',
     'science',
-    #'health',
+    'health',
     #'opinion',
     #'arts',
-    #'books',
-    #'movies',
+    'books',
+    'movies',
     #'arts/music',
     #'arts/television',
     #'style',
-    #'food',
+    'food',
     #'fashion',
-    #'travel',
-    #'education',
-    #'multimedia',
+    'travel',
+    'education',
+    'multimedia',
     #'obituaries',
     #'magazine',
 ]
@@ -162,6 +162,7 @@ class NewYorkTimes(BasicNewsRecipe):
                 'This is useful for non e-ink devices, and for a lower file size\nthan '
                 'the default, use mediumThreeByTwo440, mediumThreeByTwo225, articleInline.'
             ),
+            'default': 'mediumThreeByTwo225'
         },
         'comp': {
             'short': 'Compress News Images?',
