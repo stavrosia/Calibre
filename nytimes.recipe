@@ -99,9 +99,19 @@ class NewYorkTimes(BasicNewsRecipe):
     encoding = 'utf-8'
     __author__ = 'Kovid Goyal'
     language = 'en_US'
+
+
+    # Make Kindle treat this as a periodical with dated issues
+    publication_type = 'newspaper'      # 'magazine' also works
+    timefmt = ' [%a, %b %d, %Y]'        # append date to the title as an “issue”
+    # Optional: shows a masthead banner on some Kindle models
+    masthead_url = 'https://static01.nyt.com/vi-assets/images/share/1200x675_nameplate.png'
+
+
+
     ignore_duplicate_articles = {'title', 'url'}
     no_stylesheets = True
-    oldest_web_edition_article = 7  # days
+    oldest_web_edition_article = 3  # days
 
     extra_css = '''
         .byl, .time { font-size:small; color:#202020; }
