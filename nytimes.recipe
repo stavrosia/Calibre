@@ -111,7 +111,7 @@ class NewYorkTimes(BasicNewsRecipe):
 
     ignore_duplicate_articles = {'title', 'url'}
     no_stylesheets = True
-    oldest_web_edition_article = 3  # days
+    oldest_web_edition_article = 1  # days
 
     extra_css = '''
         .byl, .time { font-size:small; color:#202020; }
