@@ -1,2 +1,2 @@
 
-nytimes.recipe
+The New York Times (Web)
