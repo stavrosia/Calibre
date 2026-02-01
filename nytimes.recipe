@@ -34,14 +34,14 @@ web_sections = [
     'science',
     'health',
     'opinion',
-    'arts',
+    #'arts',
     'books',
     'movies',
-    'arts/music',
-    'arts/television',
-    'style',
-    'food',
-    'fashion',
+    #'arts/music',
+    #'arts/television',
+    #'style',
+    #'food',
+    #'fashion',
     'travel',
     'education',
     'multimedia',
@@ -108,7 +108,7 @@ class NewYorkTimes(BasicNewsRecipe):
     language = 'en_US'
     ignore_duplicate_articles = {'title', 'url'}
     no_stylesheets = True
-    oldest_web_edition_article = 7  # days
+    oldest_web_edition_article = 1  # days
 
     extra_css = '''
         .byl, .time { font-size:small; color:#202020; }
